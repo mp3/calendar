@@ -10,9 +10,9 @@ yarn add @itabashi/calendar
 
 ```
 import calendar from '@itabashi/calendar'
-const cal = calendar(2018, 5)
+const cal = calendar(2018)(5)
 
-/* result
+/* result: week array of 2018.5
 [
   [ 0, 0, 1, 2, 3, 4, 5 ],
   [ 6, 7, 8, 9, 10, 11, 12 ],
@@ -21,4 +21,8 @@ const cal = calendar(2018, 5)
   [ 27, 28, 29, 30, 31, 0, 0 ]
 ]
 */
+
+// this function is curried, so you can do like this
+const 2018calendar = calendar(2018)
+const 201805calendar = 2018cal(5)
 ```
