@@ -21,7 +21,7 @@ const setWeek = (year: number) => (month: number) => (weeks: [number[]]) => (dat
   if ((date.getMonth() <= month) && (date.getFullYear() === year)) setWeek(year)(month)(weeks)(date)
 }
 
-export default (year: number, actualMonth: number) => {
+export default (year: number) => (actualMonth: number) => {
   const month = actualMonth - 1
   if ((year < 1970) || (month < 0) || (month > 11)) return
 

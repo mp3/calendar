@@ -20,7 +20,7 @@ var setWeek = function (year) { return function (month) { return function (weeks
     if ((date.getMonth() <= month) && (date.getFullYear() === year))
         setWeek(year)(month)(weeks)(date);
 }; }; }; };
-exports.default = (function (year, actualMonth) {
+exports.default = (function (year) { return function (actualMonth) {
     var month = actualMonth - 1;
     if ((year < 1970) || (month < 0) || (month > 11))
         return;
@@ -28,4 +28,4 @@ exports.default = (function (year, actualMonth) {
     var date = getStartDate(new Date(year, month, 1));
     setWeek(year)(month)(weeks)(date);
     return weeks;
-});
+}; });
