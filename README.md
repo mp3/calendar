@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/%40itabashi%2Fcalendar.svg)](https://badge.fury.io/js/%40itabashi%2Fcalendar)
+
 ## Installation
 
 ```
