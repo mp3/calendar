@@ -24,5 +24,5 @@ const cal = calendar(2018)(5)
 
 // this function is curried, so you can do like this
 const 2018calendar = calendar(2018)
-const 201805calendar = 2018cal(5)
+const 201805calendar = 2018calendar(5)
 ```
